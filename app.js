@@ -43,11 +43,8 @@ new Vue({
         },
 
         editTask: function(task) {
-            // remove the task
             this.removeTask(task);
-            // update the newTask input
             this.newTask = task.body;
-            // focus the new Task input
             this.$$.newTask.focus();
         },
 
